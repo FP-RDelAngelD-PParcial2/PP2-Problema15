@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pp2.problema15;
-
+import java.util.*;
 /**
  *
  * @author PC
@@ -15,7 +15,17 @@ public class PP2Problema15 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        int[][]tabla = new int[10][10];
+        tabla=llenarTabla(tabla);
     }
-    
+    public static int[][] llenarTabla(int[][]a){
+        Scanner entradaEscaner = new Scanner(System.in);   
+        for (int i=0; i<10; i++){ 
+            for(int j=0; j<10; j++){
+               System.out.print("Introduce un número para la posición [" + i + "] [" + j + "]"); //i inidica la posición
+               a[i][j]=entradaEscaner.nextInt(); 
+            }
+        }
+        return a;
+    }
 }
