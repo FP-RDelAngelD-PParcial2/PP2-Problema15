@@ -33,23 +33,23 @@ public class PP2Problema15 {
         return a;
     }
     public static void sumarFila(int[][]b, int[]f){
-        int suma;
-        suma=0;
+        int suma = 0;
         for(int i=0; i<10; i++){
             for(int j=0; j<10; j++){
-             suma+=b[i][j];
+             suma=suma+b[i][j];
          }
         suma=f[i];
         }
+            System.out.print(suma);
     }
     public static void sumarColumna(int[][]b, int[]c){
-        int suma;
-        suma=0;
+        int suma = 0;
         for(int i=0; i<10; i++){
             for(int j=0; j<10; j++){
-             suma+=b[i][j];
+             suma=suma+b[i][j];
          }
         suma=c[i];
         }
+        System.out.print(suma);
     }
 }
