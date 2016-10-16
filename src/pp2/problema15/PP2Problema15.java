@@ -16,7 +16,7 @@ public class PP2Problema15 {
      */
     public static void main(String[] args) {
         int[][]tabla = new int[10][10];
-        tabla=llenarTabla(tabla);
+        llenarTabla(tabla);
     }
     public static int[][] llenarTabla(int[][]a){
         Scanner entradaEscaner = new Scanner(System.in);   
@@ -27,5 +27,20 @@ public class PP2Problema15 {
             }
         }
         return a;
+    }
+    public static void sumarFila(int[][]b){
+        int sumaFila; 
+        for(int i=0; i<10; i++){
+             for(int j=0; j<10; j++){
+                sumaFila=i+j;
+             }
+         }
+    }
+    public static void sumarColumna(int[][]b){
+         for(int i=0; i<10; i++){
+             for(int j=0; j<10; j++){
+                
+             }
+         }
     }
 }
