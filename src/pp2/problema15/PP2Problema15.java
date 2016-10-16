@@ -16,6 +16,8 @@ public class PP2Problema15 {
      */
     public static void main(String[] args) {
         int[][]tabla = new int[10][10];
+        int[]fila = new int[10];
+        int[]columna = new int [10];
         llenarTabla(tabla);
     }
     public static int[][] llenarTabla(int[][]a){
