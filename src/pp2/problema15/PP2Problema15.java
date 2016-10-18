@@ -20,16 +20,21 @@ public class PP2Problema15 {
 
     }
     public static int[][] llenarTabla(int[][]a){
-        int c,b;
+        int c;
         Random numAleatorio = new Random();
-           for(int i=0;i<10;i++){
-               c = numAleatorio.nextInt();
-              for(int j=0;j<10;j++){
-               b = numAleatorio.nextInt();   
-                  System.out.print(b+"\t");
-              }
-               System.out.println(c+"\n");//h
+           for(int i=0;i<a.length;i++){
+               for(int j=0; j<a.length; j++){
+                   a[i][j]=numAleatorio.nextInt(100+1);
+                     if(j==10){
+                         c=0;
+                          for(int k=0; k<a.length;k++){
+                              c=a[i][k]+c;
+                          }
+                          a[i][j]=c;
+                     }
+               }
+               
             }
-           return a;
+           return;
      }
 }
