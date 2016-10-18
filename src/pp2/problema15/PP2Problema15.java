@@ -23,15 +23,18 @@ public class PP2Problema15 {
         sumarColumna(tabla, columna);
     }
     public static int[][] llenarTabla(int[][]a){
-        Scanner entradaEscaner = new Scanner(System.in);   
-        for (int i=0; i<10; i++){ 
-            for(int j=0; j<10; j++){
-               System.out.print("Introduce un número para la posición [" + i + "] [" + j + "]"); //i inidica la posición
-               a[i][j]=entradaEscaner.nextInt(); 
+        int c,b;
+        Random numAleatorio = new Random();
+           for(int i=0;i<10;i++){
+               c = numAleatorio.nextInt();
+              for(int j=0;j<10;j++){
+               b = numAleatorio.nextInt();   
+                  System.out.print(b+"\t");
+              }
+               System.out.println(c+"\n");
             }
-        }
-        return a;
-    }
+           return a;
+            }
     public static void sumarFila(int[][]b, int[]f){
         int suma = 0;
         for(int i=0; i<10; i++){
