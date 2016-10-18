@@ -31,7 +31,7 @@ public class PP2Problema15 {
                b = numAleatorio.nextInt();   
                   System.out.print(b+"\t");
               }
-               System.out.println(c+"\n");
+               System.out.println(c+"\n");//h
             }
            return a;
             }
