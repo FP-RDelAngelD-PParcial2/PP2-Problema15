@@ -17,6 +17,7 @@ public class PP2Problema15 {
     public static void main(String[] args) {
         int[][]tabla = new int[10][10];
         llenarTabla(tabla);
+        mostrarVector(tabla);
 
     }
     public static int[][] llenarTabla(int[][]a){
@@ -33,8 +34,15 @@ public class PP2Problema15 {
                           a[i][j]=c;
                      }
                }
-               
             }
-           return;
+           return a;
      }
+    public static void mostrarVector(int[][] a){
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a.length;j++){
+                System.out.println(a[i][j] + "\t");
+            }
+            System.out.println("\n");
+        }
+    }
 }
