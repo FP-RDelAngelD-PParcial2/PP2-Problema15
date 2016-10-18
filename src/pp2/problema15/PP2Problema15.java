@@ -16,11 +16,8 @@ public class PP2Problema15 {
      */
     public static void main(String[] args) {
         int[][]tabla = new int[10][10];
-        int[]fila = new int[10];
-        int[]columna = new int [10];
         llenarTabla(tabla);
-        sumarFila(tabla, fila);
-        sumarColumna(tabla, columna);
+
     }
     public static int[][] llenarTabla(int[][]a){
         int c,b;
@@ -34,25 +31,5 @@ public class PP2Problema15 {
                System.out.println(c+"\n");//h
             }
            return a;
-            }
-    public static void sumarFila(int[][]b, int[]f){
-        int suma = 0;
-        for(int i=0; i<10; i++){
-            for(int j=0; j<10; j++){
-             suma=suma+b[i][j];
-         }
-        suma=f[i];
-        }
-            System.out.print(suma);
-    }
-    public static void sumarColumna(int[][]b, int[]c){
-        int suma = 0;
-        for(int i=0; i<10; i++){
-            for(int j=0; j<10; j++){
-             suma=suma+b[i][j];
-         }
-        suma=c[i];
-        }
-        System.out.print(suma);
-    }
+     }
 }
