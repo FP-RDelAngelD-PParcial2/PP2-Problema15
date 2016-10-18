@@ -46,7 +46,7 @@ public class PP2Problema15 {
             }
            return a;
      }
-    public static void mostrarVector(int[][] a){
+    public static void mostrarVector(int[][]a){
         for(int i=0;i<a.length;i++){
             for(int j=0;j<a.length;j++){
                 System.out.println(a[i][j] + "\t");
