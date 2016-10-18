@@ -22,18 +22,19 @@ public class PP2Problema15 {
     }
     public static int[][] llenarTabla(int[][]a){
         int c;
-        Random numAleatorio = new Random();
+        Random numAleatorio = new Random(); //Se genera el numero aleatorio
            for(int i=0;i<a.length;i++){
                for(int j=0; j<a.length; j++){
-                   a[i][j]=numAleatorio.nextInt(100+1);
-                     if(j==10){
+                   a[i][j]=numAleatorio.nextInt(9+1);//Se llena el arreglo con numeros hasta el 9 (decision personal para que la tabla no se vea
+                                                     //feo y esas cosas)
+                     if(j==10){ //Si j es igual a 10 toma el valor de los valores de las filas
                          c=0;
                           for(int k=0; k<a.length-1;k++){
                               c=a[i][k]+c;
                           }
                           a[i][j]=c;
                      }
-                     if(i==10){
+                     if(i==10){ //Si i es igual a 10 toma el valor de los valores de las columnas
                          c=0;
                          for(int k=0;k<a.length-1;k++){
                              c=a[k][j]+c;
@@ -46,7 +47,7 @@ public class PP2Problema15 {
             }
            return a;
      }
-    public static void mostrarVector(int[][]a){
+    public static void mostrarVector(int[][]a){ //Se muestran las filas y las columnas
         for(int i=0;i<a.length;i++){
             for(int j=0;j<a.length;j++){
                 System.out.println(a[i][j] + "\t");
