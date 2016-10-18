@@ -28,12 +28,21 @@ public class PP2Problema15 {
                    a[i][j]=numAleatorio.nextInt(100+1);
                      if(j==10){
                          c=0;
-                          for(int k=0; k<a.length;k++){
+                          for(int k=0; k<a.length-1;k++){
                               c=a[i][k]+c;
                           }
                           a[i][j]=c;
                      }
+                     if(i==10){
+                         c=0;
+                         for(int k=0;k<a.length-1;k++){
+                             c=a[k][j]+c;
+                         }
+                         a[i][j]=c;
+                     }
+                     System.out.print("[" + a[i][j] + "]"); //Se imprime la tabla
                }
+               System.out.print("\n");
             }
            return a;
      }
